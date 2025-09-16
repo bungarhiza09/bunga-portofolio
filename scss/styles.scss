@@ -489,6 +489,91 @@ body {
   margin-bottom: $spacing; // kasih jarak ke teks di bawahnya
 }
 
+/* Bagian Pendidikan (style GitHub-like, lebih besar) */
+.education {
+    margin-bottom: $spacing-xl;
+    max-width: 1200px;
+    padding: 0 $spacing-xl;
+
+    h2 {
+        text-align: center;
+        font-size: $font-size-3xl;
+        color: $dark-color;
+        margin-bottom: $spacing-sm;
+    }
+
+        
+   .button-wrapper {
+        text-align: center;   // semua isi div rata tengah
+        margin-top: $spacing-lg;
+    }
+
+    
+    .button {
+        background-color: #44444E;
+        min-width: 160px;
+        padding: 0.8rem 1.2rem;
+        color: $light-color;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        text-align: center;
+        cursor: pointer;
+        display: inline-block;    // biar tombol bisa ditengah
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: darken(#D3DAD9, 10%);
+        }
+    }
+}
+
+.edu-list {
+  border-left: 3px solid #d0d7de;
+  margin-left: 2rem;      /* geser seluruh list agak ke kanan */
+  padding-left: 2.5rem;   /* tambah jarak teks dari garis & titik */
+}
+
+.edu-item::before {
+  content: "";
+  position: absolute;
+  left: -33px;  /* geser titik lebih jauh ke kiri */
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #213045;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #d0d7de;
+}
+
+.edu-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+
+.edu-item h3 {
+  margin: 0;
+  font-size: 1.4rem;   /* lebih besar */
+  color: #24292f;
+  font-weight: 700;
+}
+
+.edu-year {
+  font-size: 1rem;   /* lebih besar */
+  color: #57606a;
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+.edu-item p {
+  margin: 0;
+  font-size: 1rem;   /* lebih besar */
+  color: #444;
+}
+
 // Footer - Full Width
 .footer {
     background-color: $dark-color;
